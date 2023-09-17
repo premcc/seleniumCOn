@@ -2,6 +2,7 @@ package TestNg_Programs;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 public class priority_Class {
 	

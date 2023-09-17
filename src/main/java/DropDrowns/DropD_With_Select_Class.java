@@ -10,13 +10,15 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class DropD_With_Select_Class {
 	
 	@Test
 	public void dropdown() throws Throwable
 	{
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\heman\\eclipse\\Selenium_Concepts\\Servers\\chromedriver.exe");
-	
+	//System.setProperty("webdriver.chrome.driver", "C:\\Users\\heman\\eclipse\\Selenium_Concepts\\Servers\\chromedriver.exe");
+	WebDriverManager.chromedriver().setup();
 	
 	WebDriver driver=new ChromeDriver();
 	driver.manage().window().maximize();
